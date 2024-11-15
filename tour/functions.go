@@ -18,8 +18,15 @@ func pangkat3(x uint8) uint8 {
 	return x * x * x
 }
 
+func swap(x, y string) (string, string) {
+	fmt.Println("Menggunakan fungsi multiple result atau return > 1 nilai.")
+	return y, x
+}
+
 func main() {
 	fmt.Println(add(42, 13))
 	fmt.Println(add_too(42, 13))
 	fmt.Println(pangkat3(3))
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
 }
